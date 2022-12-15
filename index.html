@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-black navbar-expand-lg bg-info fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-2">Your Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active"  new-bg-data="./img/checken.jpg">chicken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" new-bg-data="./img/sushi-wide-720P-wallpaper-middle-size.jpg">sushi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" new-bg-data="./img/flatlay-iron-skillet-with-meat-and-other-food.jpg">beef</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" new-bg-data="./img/pizza.jpg">pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" new-bg-data="./img/df8e8cfc456a59c592d7a27593048d4b.jpg">green pepper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" new-bg-data="./img/eda-sladkoe-makarun-macaron-6809.jpg">cake</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <a id="favorBtn" class="btn btn-danger fw-bolder form-control start-50 translate-middle-x mt-2">Favorite</a>
+  <header>
+    <div class="front-img"></div>
+    <div class="container-fluid my-5">
+      <div class="row gy-4 d-flex" id="recipesContainer">
+      </div>
+
+      <div class="fav-items d-none" id="favItems">
+        <h2 class="text-center fw-bolder text-success mb-4">Hi Our Client: </h2>
+        <h3 id="clientList" class="ms-5 fw-bold">list with your faourite recipes :-</h3>
+        <div class="container my-5">
+          <div class="row gy-4" id="celection">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Recipe ingredients</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="recipeModal">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

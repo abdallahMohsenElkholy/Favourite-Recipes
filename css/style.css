@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Mouse+Memoirs&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Square+Peg&display=swap');
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: cadetblue;
+    background-size: cover;
+}
+
+header .front-img {background-image: url(../img/checken.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+@media (max-width: 700px) {
+        #favorBtn{left: 65% !important;top: 8px !important;}
+
+}
+
+.active{
+    color: #fff !important;
+}
+
+#favorBtn{
+    width: 130px;
+    position: fixed;
+    top: 4%;
+    left: 0;
+    z-index: 99999;
+}
+
+nav a {
+    font-weight: 600 !important;
+}
+
+.h-150 {
+    height: 200px;
+}
+
+li a {
+    cursor: pointer;
+}
+
+.recipe .im{
+    overflow: hidden;
+}
+
+.recipe .im a img{
+    transition: .5s;
+}
+
+.recipe .im a img:hover {
+    transform: scale(1.2,1.2);
+}
+
+.bt{
+    background-color: rgba(238, 238, 238, 0.144) !important;
+    color: rgba(0, 0, 0, 0.158) !important;
+    border: none !important;
+    cursor: auto;
+}
+
+.pub{
+    text-decoration: none;
+    color: black;
+}
